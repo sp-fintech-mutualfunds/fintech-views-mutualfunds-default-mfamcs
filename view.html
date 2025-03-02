@@ -1,0 +1,34 @@
+{% if amc['id'] is defined %}
+    {% set amcId = amc['id'] %}
+    {% set title = 'Amc (' ~ amc['name'] ~ ')' %}
+{% else %}
+    {% set amcId = '' %}
+    {% set title = 'New Amc' %}
+{% endif %}
+{{adminltetags.useTag('content',
+    [
+        'component'                     : component,
+        'componentName'                 : componentName,
+        'componentId'                   : componentId,
+        'parentComponentId'             : parent,
+        'sectionId'                     : 'main',
+        'contentType'                   : 'sectionWithForm',
+        'cardHeader'                    : true,
+        'cardFooter'                    : true,
+        'cardType'                      : 'primary',
+        'cardIcon'                      : 'circle-dot',
+        'cardTitle'                     : title,
+        'cardAdditionalClass'           : 'rounded-0',
+        'cardBodyInclude'               : 'amcs/form',
+        'formButtons'                   :
+        [
+            'updateButtonId'                : amcId,
+            'addActionUrl'                  : 'amcs/add',
+            'addSuccessRedirectUrl'         : 'amcs',
+            'updateActionUrl'               : 'amcs/update',
+            'updateSuccessRedirectUrl'      : 'amcs',
+            'cancelActionUrl'               : 'amcs',
+            'closeActionUrl'                : 'amcs'
+        ]
+    ]
+)}}
