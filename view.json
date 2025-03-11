@@ -1,12 +1,12 @@
 {
 	"name" : "MfAmcs",
-	"display_name" : "SP Framework Fintech Mf Amcs View",
-	"description" : "<p>SP Framework Fintech Mf Amcs View</p>",
+	"display_name" : "Mutual Fund Amcs View",
+	"description" : "<p>Mutual Fund Amcs View</p>",
 	"module_type" : "views",
 	"app_type" : "fintech",
 	"category" : "mutualfunds",
 	"version" : "0.0.0",
-	"repo" : "https://github.com/sp-fintech/fintech-views-mutualfunds-default-mfamcs",
+	"repo" : "https://github.com/sp-fintech-mutualfunds/fintech-views-mutualfunds-default-mfamcs",
 	"dependencies" : 
 	{
 		"core" : 
